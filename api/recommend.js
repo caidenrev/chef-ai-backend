@@ -17,7 +17,8 @@ export default async function handler(req, res) {
   
   // COBA: Gunakan model 'gemini-1.5-flash' (tanpa -latest) 
   // Jika masih 404, coba ganti ke 'gemini-1.5-pro' untuk testing
-  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+  // Coba ganti model ke 'gemini-1.5-flash-latest' atau 'gemini-pro'
+const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" });
 
   const prompt = `
     Anda adalah Chef Revan, asisten kuliner khusus anak kos di Indonesia.
